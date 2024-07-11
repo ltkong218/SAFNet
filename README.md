@@ -43,7 +43,7 @@ Test samples for our experiments in this paper:
 <code>xxx</code> means the three digits data ID.
 
 ## Citation
-When using any parts of the Software or the Paper in your work, please cite the following paper:
+When using any parts of the Dataset, Software or the Paper in your work, please cite the following paper:
 <pre><code>@InProceedings{Kong_2024_ECCV, 
   author={Kong, Lingtong and Li, Bo and Xiong, Yike and Zhang, Hao and Gu, Hong and Chen, Jinwei}, 
   title={SAFNet: Selective Alignment Fusion Network for Efficient HDR Imaging}, 
