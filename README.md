@@ -42,6 +42,28 @@ Test samples for our experiments in this paper:
 
 <code>xxx</code> means the three digits data ID.
 
+## Training
+I am sorry that I can not release the training code of SAFNet due to requirements of my company, but the readers can try to reproduce the experimental results according to my paper.
+
+## Evaluation on Kalantari 17 Test Dataset
+To test PSNR-m and PSNR-l, set the right dataset path in <code>eval_SAFNet_siggraph17.py</code> and <code>eval_SAFNet_S_siggraph17.py</code>, and then run
+<pre><code>$ python eval_SAFNet_siggraph17.py</code>
+<code>$ python eval_SAFNet_S_siggraph17.py</code></pre>
+To test SSIM-m, SSIM-l and HDR-VDP2, (1) get predicted HDR images in folder <code>./img_hdr_pred_siggraph17</code> by running <code>$ python eval_SAFNet_siggraph17.py</code>; (2) put and rename the ground truth HDR test images into folder <code>./matlab_evaluation/img_hdr_gt_siggraph17/*</code> as <code>001.hdr, 002.hdr, ...</code>; (3) download file [hdrvdp-2.2.2](https://sourceforge.net/projects/hdrvdp/files/hdrvdp/2.2.2/hdrvdp-2.2.2.zip/download) and put the unzipped file into folder <code>./matlab_evaluation/hdrvdp-2.2.2</code>. Run matlab script
+<pre><code>./matlab_evaluation/eval_siggraph17.m</code></pre>
+
+## Evaluation on Challenge123 Test Dataset
+To test PSNR-m and PSNR-l, set the right dataset path in <code>eval_SAFNet_challenge123.py</code>, and then run
+<pre><code>$ python eval_SAFNet_challenge123.py</code></pre>
+To test SSIM-m, SSIM-l and HDR-VDP2, (1) get predicted HDR images in folder <code>./img_hdr_pred_challenge123</code> by running <code>$ python eval_SAFNet_challenge123.py</code>; (2) put and rename the ground truth HDR test images into folder <code>./matlab_evaluation/img_hdr_gt_challenge123/*</code> as <code>001.hdr, 002.hdr, ...</code>; (3) download file [hdrvdp-2.2.2](https://sourceforge.net/projects/hdrvdp/files/hdrvdp/2.2.2/hdrvdp-2.2.2.zip/download) and put the unzipped file into folder <code>./matlab_evaluation/hdrvdp-2.2.2</code>. Run matlab script
+<pre><code>./matlab_evaluation/eval_challenge123.m</code></pre>
+
+## Benchmarks for SAFNet and SAFNet-S
+To test running time, model parameters and computation complexity (FLOPs), you can run
+<pre><code>$ python benchmark_SAFNet.py</code>
+<code>$ python benchmark_SAFNet_S.py</code></pre>
+Before, you may run <code>pip install thop</code> and <code>pip install pynvml</code>.
+
 ## Citation
 When using any parts of the Dataset, Software or the Paper in your work, please cite the following paper:
 <pre><code>@InProceedings{Kong_2024_ECCV, 
