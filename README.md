@@ -1,5 +1,5 @@
 # SAFNet: Selective Alignment Fusion Network for Efficient HDR Imaging
-The official PyTorch implementation of [SAFNet](https://arxiv.org/abs/2407.16308) (ECCV 2024).
+The official PyTorch implementation of [SAFNet](https://arxiv.org/abs/2407.16308) (ECCV 2024). The technology and codes related to this paper are for academic research only and no commercial use for any purpose is allowed.
 
 Authors: [Lingtong Kong](https://scholar.google.com.hk/citations?user=KKzKc_8AAAAJ&hl=zh-CN), Bo Li, Yike Xiong, Hao Zhang, Hong Gu, Jinwei Chen
 
